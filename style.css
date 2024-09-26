@@ -1,0 +1,130 @@
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+body{
+    background: #fcf3e3;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: #ff4747;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.dropdown span a{
+    display: block;
+    color: #695356;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown span i{
+    color: #ff4747;
+}
+.dropdown .items{
+    background-color: #f7e9de;
+    display: none;
+    margin-left: -50px;
+    min-width: 80px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+    position: absolute;
+}
+.dropdown:hover .items{
+    display: block;
+}
+.dropdown:hover button{
+    color: #ffb547;
+    rotate: 90deg;
+}
+.dropdown span a:hover{
+    background-color: bisque;
+}
+h4{
+    color: #695356;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 45px;
+    margin-top: 0;
+}
+hr{
+    border: 1px solid #ffb547;
+    margin-top: -65px;
+}
+/*Login page*/
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+.login-container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 0 30px;
+}
+.login-container span {
+  color: #ff4747;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+.header {
+  color: #695356;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+.login-container i {
+  position: relative;
+  top: -34px;
+  left: 17px;
+  color: #ff4747;
+}
+.login-container .input-field {
+  display: flex;
+  flex-direction: column;
+}
+.login-container .input {
+  height: 45px;
+  width: 87%;
+  border: 2px solid #ffb547;
+  outline: none;
+  border-radius: 30px;
+  color: black;
+  padding: 0 0 0 45px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.login-container .submit {
+  border: 1px solid #ff4747;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  height: 45px;
+  outline: none;
+  margin-left: 55px;
+  width: 60%;
+  background: bisque;
+  transition: 0.3s;
+}
+.submit:hover {
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.bottom {
+  display: flex;
+  margin-top: 10px;
+}
+.bottom a {
+  text-decoration: none;
+  color: #ff4747;
+}
+.bottom a:hover {
+  color: #ffb547;
+  font-weight: 900;
+}
