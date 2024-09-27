@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareerCrafters</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         /* General styling */
         body {
@@ -141,16 +142,48 @@
 </head>
 <body>
     <header>
+        <h4>CareerCrafters</h4>
         <nav>
-            <ul>
-                <li><a href="#partnerships">Partnerships</a></li>
-                <li><a href="#job-matching">Job Matching</a></li>
-                <li><a href="#skill-development">Skill Development</a></li>
-                <li><a href="#community-forum">Community Forum</a></li>
-                <li><a href="#career-coaching">Career Coaching</a></li>
-            </ul>
+            <div class="dropdown">
+                <button>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>                    
+                <div class="items">   
+                    <span class="icon">
+                        <a href="">
+                            <i class="fa-regular fa-handshake"></i>
+                            Partnerships
+                        </a>
+                        </span>
+                        <span>
+                        <a href="">
+                            <i class="fa-solid fa-person-circle-check"></i>
+                            Job Matching
+                        </a>
+                        </span>
+                        <span>
+                        <a href="">
+                            <i class="fa-solid fa-gears"></i>
+                            Skills Development
+                        </a>
+                        </span>
+                        <span>
+                        <a href="">
+                            <i class="fa-solid fa-home"></i>
+                            Community Forum
+                        </a>
+                        </span>
+                        <span>
+                        <a href="">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Career Coaching
+                        </a>
+                        </span>
+                    </div>
+            </div>     
         </nav>
     </header>
+    <hr>    
     <main>
         <section id="partnerships">
             <h2>Partnerships</h2>

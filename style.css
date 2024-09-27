@@ -19,7 +19,6 @@ button{
 .dropdown span a{
     display: block;
     color: #695356;
-    font-size: 20px;
     text-decoration: none;
     padding: 10px 15px;
 }
@@ -48,12 +47,13 @@ h4{
     color: #695356;
     font-family:'Times New Roman', Times, serif;
     font-size: 45px;
-    margin-top: 0;
+    margin-top: 0;/*aligns the logo with the button*/
 }
 hr{
     border: 1px solid #ffb547;
     margin-top: -65px;
 }
+/*end of navbar*/
 /*Login page*/
 #login {
   display: flex;
@@ -128,3 +128,4 @@ hr{
   color: #ffb547;
   font-weight: 900;
 }
+/*End of login page styles*?
