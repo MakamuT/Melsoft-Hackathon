@@ -1,7 +1,6 @@
 @import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
 body{
     background: #fcf3e3;
-    ;
 }
 header{
     display: flex;
@@ -54,82 +53,42 @@ hr{
     border: 1px solid #ffb547;
     margin-top: -65px;
 }
-/*end of navbar*/
 
-/*Login page*/
-#login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 70vh;
+h1{
+    color: #695356;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: center;
 }
-.login-container {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  padding: 0 30px 0 30px;
+#job-search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-.login-container span {
-  color: #ff4747;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0 10px 0;
-}
-.header {
-  color: #695356;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0 10px 0;
-}
-.login-container i {
-  position: relative;
-  top: -34px;
-  left: 17px;
-  color: #ff4747;
-}
-.login-container .input-field {
-  display: flex;
-  flex-direction: column;
-}
-.login-container .input {
+#job-search-form input {
   height: 45px;
   width: 87%;
   border: 2px solid #ffb547;
   outline: none;
   border-radius: 30px;
   color: black;
+  cursor: pointer;
   padding: 0 0 0 45px;
   background: rgba(255, 255, 255, 0.1);
 }
-.login-container .submit {
+#job-search-btn {
   border: 1px solid #ff4747;
   border-radius: 30px;
+  color: #695356;
   cursor: pointer;
   font-size: 15px;
   height: 45px;
   outline: none;
-  margin-left: 55px;
-  width: 60%;
+  align-self: center;
+  width: 30%;
   background: bisque;
   transition: 0.3s;
 }
-.submit:hover {
+#job-search-btn:hover {
   box-shadow: 1px 5px 7px 1px rgba(253, 115, 115, 0.2);
 }
-.bottom {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-.bottom a {
-  text-decoration: none;
-  color: #ff4747;
-}
-.bottom a:hover {
-  color: #ffb547;
-  font-weight: 900;
-}
-/*End of login page styles*?

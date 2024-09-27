@@ -1,0 +1,56 @@
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+body{
+    background: #fcf3e3;
+    ;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: #ff4747;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.dropdown span a{
+    display: block;
+    color: #695356;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown span i{
+    color: #ff4747;
+}
+.dropdown .items{
+    background-color: #f7e9de;
+    display: none;
+    margin-left: -50px;
+    min-width: 80px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+    position: absolute;
+}
+.dropdown:hover .items{
+    display: block;
+}
+.dropdown:hover button{
+    color: #ffb547;
+    rotate: 90deg;
+}
+.dropdown span a:hover{
+    background-color: bisque;
+}
+h4{
+    color: #695356;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 45px;
+    margin-top: 0;/*aligns the logo with the button*/
+}
+hr{
+    border: 1px solid #ffb547;
+    margin-top: -65px;
+}
