@@ -54,3 +54,9 @@ hr{
     border: 1px solid #ffb547;
     margin-top: -65px;
 }
+h1{
+    color: #695356;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: center;
+}
