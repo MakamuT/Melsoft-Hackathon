@@ -4,19 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partnerships - CareerCrafters</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="partnerships.css"> 
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">Back to Home</a>
+            <div class="dropdown">
+                <button>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>                    
+                <div class="items">   
+                    <span class="icon">
+                        <a href="partnerships.html">Partnerships</a>
+                        <a href="job-matching.html">Job Matching</a>
+                        <a href="skill-development.html">Skills Development</a>
+                        <a href="community-forum.html">Community Forum</a>
+                        <a href="career-coaching.html">Career Coaching</a>
+                        <a href="index.html">Home</a>
+                    </span>
+                </div>
+            </div>     
         </nav>
+        <h4>CareerCrafters</h4>
     </header>
     <hr>
     <main>
         <section id="partnerships">
-            <h2>Partnerships</h2>
-            <ul id="partners-list"></ul>
+            <h2>Our Partners</h2>
+            <p>At CareerCrafters, we believe that partnerships are key to tackling unemployment in our country. By collaborating with innovative companies like Yoco, Luno, and Yebo Fresh, we have been able to provide our users with access to valuable resources, job opportunities, and skills development programs. 
+                These partnerships have not only helped us to better understand the needs of the 
+                job market but have also enabled us to create more effective solutions to address the challenges of unemployment. 
+                We are committed to continuing to build strong partnerships with like-minded organizations to further our mission and make a meaningful impact in our community.</p>
+            <div class="partners-grid">
+                <div class="partner-item" id="yoco">
+                    <img src="images/Yoco.png" alt="Yoco Logo" class="partner-logo">
+                    <div class="partner-details">
+                        <h3>Yoco</h3>
+                        <p>Yoco is a leading name in mobile point-of-sale (POS) solutions...</p>
+                    </div>
+                </div>
+                <div class="partner-item" id="luno">
+                    <img src="images/Luno.png" alt="Luno Logo" class="partner-logo">
+                    <div class="partner-details">
+                        <h3>Luno</h3>
+                        <p>Luno is a cryptocurrency exchange platform...</p>
+                    </div>
+                </div>
+                <div class="partner-item" id="yebofresh">
+                    <img src="images/YeboFresh.png" alt="Yebo Fresh Logo" class="partner-logo">
+                    <div class="partner-details">
+                        <h3>Yebo Fresh</h3>
+                        <p>On the foodtech scene, Yebo Fresh leverages technology...</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
