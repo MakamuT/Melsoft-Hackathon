@@ -3,48 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | CareerCrafters</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-k6RqeWeci5ZR/Lv4MR0sA0FfDOMo5Ri5ImI07XwLw+d7h5hKj4n9Kr98Wl4Ib6qCmONxAnkVDDDSyO7g0DGAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CareerCrafters</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header class="header">
-        <h4 class="logo">CareerCrafters</h4>
+    <header>
         <nav>
             <div class="dropdown">
                 <button>
                     <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
+                </button>                    
                 <div class="items">   
-                    <span><a href="partnerships.html">Partnerships</a></span>
-                    <span><a href="job-matching.html">Job Matching</a></span>
-                    <span><a href="skill-development.html">Skills Development</a></span>
-                    <span><a href="community-forum.html">Community Forum</a></span>
-                    <span><a href="career-coaching.html">Career Coaching</a></span>
-                    <span><a href="index.html">Home</a></span>
+                    <span class="icon">
+                        <a href="partnerships.html">Partnerships</a>
+                    </span>
+                    <span>
+                        <a href="job-matching.html">Job Matching</a>
+                    </span>
+                    <span>
+                        <a href="skill-development.html">Skills Development</a>
+                    </span>
+                    <span>
+                        <a href="community-forum.html">Community Forum</a>
+                    </span>
+                    <span>
+                        <a href="career-coaching.html">Career Coaching</a>
+                    </span>
+                    <span>
+                        <a href="index.html">Home</a> 
+                    </span>
                 </div>
             </div>     
         </nav>
+        <h4>CareerCrafters</h4>
     </header>
+
     <hr>
-    <section id="register">
-        <div class="register-container">
-            <h1>Register</h1>
-            <form>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password"><br><br>
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password"><br><br>
-                <input type="submit" value="Register">
+
+    <section id="login">
+        <div class="login-container">
+            <div class="top-header">
+                <span>Have an account</span>
+                <header class="header">Login</header>
+            </div>
+            <form id="loginForm">
+                <div class="input-field">
+                    <input type="text" class="input" placeholder="Enter email" id="email" required>
+                    <i class="fa-solid fa-user-circle"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="input" placeholder="Enter password" id="password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="input-field">
+                    <input type="submit" class="submit" id="logIn" style="--clr:#ff4747;">
+                </div>
             </form>
+
+            <div id="error" style="color: red;"></div>
+
+            <div class="bottom">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+                <p>Get Started <a href="key-features.html">Click Here To Start</a></p>
+            </div>
         </div>
-    </section>
-    <footer>
-        <p>CareerCrafters &copy; 2024. All Rights Reserved.</p>
-    </footer>
+    </section>  
+
+    <script defer>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Stop the form from submitting
+            let errors = [];
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+
+          
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                errors.push('Enter a valid email address');
+            }
+
+            if (password.length < 8) {
+                errors.push('Password must be at least 8 characters long');
+            }
+
+           
+            if (errors.length > 0) {
+                document.getElementById('error').innerHTML = errors.join('<br>');
+            } else {
+                document.getElementById('error').innerHTML = 'Submitted successfully';
+                
+            }
+        });
+    </script>
 </body>
 </html>
