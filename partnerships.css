@@ -59,7 +59,6 @@ button {
 .dropdown span a:hover {
     background-color: bisque;
 }
-
 h4 {
     color: #695356;
     font-family: 'Times New Roman', Times, serif;
@@ -72,49 +71,29 @@ hr {
     margin-top: -20px;
 }
 
-h1 {
+h1{
     color: #695356;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
+    font-size: 45px;
+    font-weight: 700;
     text-align: center;
 }
 
-#job-search-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.text-box {
+    background-color: bisque;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 10px #ffb547;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-top: 80px;
+    text-align: center;
 }
-
-#job-search-form input {
-    height: 45px;
-    width: 87%;
-    border: 2px solid #ffb547;
-    outline: none;
-    border-radius: 30px;
+.text-box p{
     color: black;
-    cursor: pointer;
-    padding: 0 0 0 45px;
-    background: rgba(255, 255, 255, 0.1);
+    font: 1em sans-serif;
+    gap: 8px;
 }
-
-#job-search-btn {
-    border: 1px solid #ff4747;
-    border-radius: 30px;
-    color: #695356;
-    cursor: pointer;
-    font-size: 15px;
-    height: 45px;
-    outline: none;
-    align-self: center;
-    width: 30%;
-    background: bisque;
-    transition: 0.3s;
-}
-
-#job-search-btn:hover {
-    box-shadow: 1px 5px 7px 1px rgba(253, 115, 115, 0.2);
-}
-
 /* Partners Grid Section */
 .partners-grid {
     display: grid;
