@@ -16,6 +16,12 @@ button{
     padding: 10px 15px;
     cursor: pointer;
 }
+.items a{
+  display: flex;
+  color: #ff4747;
+  font-size: 20px;
+  text-decoration: none;
+}
 .dropdown span a{
     display: block;
     color: #695356;
@@ -26,9 +32,9 @@ button{
     color: #ff4747;
 }
 .dropdown .items{
-    background-color: #f7e9de;
+    background-color: burlywood;
     display: none;
-    margin-left: -50px;
+    margin-left: -10px;
     min-width: 80px;
     box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
     position: absolute;
@@ -46,12 +52,12 @@ button{
 h4{
     color: #695356;
     font-family:'Times New Roman', Times, serif;
-    font-size: 45px;
+    font-size: 30px;
     margin-top: 0;/*aligns the logo with the button*/
 }
 hr{
     border: 1px solid #ffb547;
-    margin-top: -65px;
+    margin-top: -20px;
 }
 
 h1{
